@@ -1,5 +1,5 @@
 {
-  "name": "graphql-clock",
+  "name": "react-state-management",
   "description": "",
   "version": "0.0.1",
   "dependencies": {
@@ -9,7 +9,7 @@
     "spectacle-code-slide": "^0.5.2",
     "styled-components": "^2.4.0"
   },
-  "homepage": "http://m1ch3lcl-slides.github.io/clock-graphql",
+  "homepage": "http://m1ch3lcl-slides.github.io/react-state-management",
   "devDependencies": {
     "gh-pages": "^1.1.0",
     "react-scripts": "1.0.0"
