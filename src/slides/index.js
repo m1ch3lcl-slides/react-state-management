@@ -9,7 +9,8 @@ import ReactContext from './08-context';
 import Redux01 from './09-redux.js';
 import Redux02 from './10-redux.js';
 import Unstated from './11-unstated.js';
-import Conclusion from './12-conclusion.js';
+import Mobx from './12-mobx.js';
+import Conclusion from './13-conclusion.js';
 
 export default [
   Intro,
@@ -28,5 +29,6 @@ export default [
   Redux02,
   ExecutiveSummary(5),
   Unstated,
+  Mobx,
   Conclusion
 ];
