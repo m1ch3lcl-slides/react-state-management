@@ -16,7 +16,8 @@
 .browser-frame > .toolbar > input {
   background: white;
   width: 100%;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold;
   border: none;
   padding: 5px;
   color: #555;

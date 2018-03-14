@@ -11,10 +11,10 @@ export default (
         <span className="icon icon-0" />
         <span className="icon icon-1" />
         <span className="icon icon-2" />
-        <div className="title">React Contexte</div>
+        <div className="title">React Context</div>
       </div>
       <div className="toolbar">
-        <input type="text" value="https://codesandbox.io/embed/jz229ojj0w" disabled />
+        <input type="text" value="https://codesandbox.io/s/jz229ojj0w" disabled />
       </div>
       <iframe
         title="exemple 1 avec iframe"
