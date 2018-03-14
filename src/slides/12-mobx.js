@@ -11,7 +11,7 @@ export default (
         <span className="icon icon-0" />
         <span className="icon icon-1" />
         <span className="icon icon-2" />
-        <div className="title">Unstated</div>
+        <div className="title">Mobx</div>
       </div>
       <div className="toolbar">
         <input type="text" value="https://codesandbox.io/s/5w7167nonp" disabled />
