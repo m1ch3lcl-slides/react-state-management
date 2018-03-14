@@ -1,0 +1,26 @@
+.spectacle-slide .spectacle-content h1 {
+  color: gray !important;
+  border-width: 5px !important;
+  border-color: cadetblue !important;
+}
+
+.full-height {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+
+.code-slide {
+  align-self: stretch;
+}
+
+.code-slide > pre {
+  padding: unset !important;
+  height: 100% !important;
+  padding-top: 250px !important;
+  padding-bottom: 100px !important;
+}
+
+.code-slide > div:last-child {
+  text-align: center !important;
+}

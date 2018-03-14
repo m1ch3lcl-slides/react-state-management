@@ -1,0 +1,70 @@
+<html>
+
+<head>
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Ma liste de tâches : </h1>
+  <div id="root">
+
+  </div>
+</body>
+
+<div id="root"></div>
+<script type="text/babel">
+  
+  class TodoList extends React.Component {
+    state = {
+      input: '',
+      todos: [
+        'Préparer la mini-forma de mercredi',
+        'Avancer le frontend fil rouge'
+      ]
+    };
+
+    handleInputChange = e => {
+      this.setState({ input: e.target.value });
+    };
+
+    handleDeleteTodo = content => () => {
+      this.setState(state => {
+        return { todos: state.todos.filter(c => c !== content) };
+      });
+    };
+
+    handleAddTodo = e => {
+      e.preventDefault();
+      this.setState(state => {
+        return { todos: state.todos.concat([state.input]), input: '' };
+      });
+    }
+
+    render () {
+      const { todos, input } = this.state;
+
+      return <ul>
+        { todos.map(content => <li key={content}>{content} <button onClick={this.handleDeleteTodo(content)}>X</button></li>) }
+        <form id="todo-controls" onSubmit={this.handleAddTodo}>
+          <input type="text" value={input} onChange={this.handleInputChange}/>
+          <button id="todo-submit">Envoyer</button>
+        </form>
+      </ul>
+    } 
+  }
+
+  ReactDOM.render(
+    <TodoList />,
+    document.getElementById('root')
+  );
+
+</script>
+
+</html>
